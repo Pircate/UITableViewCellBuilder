@@ -13,6 +13,14 @@
 		6CBA6708214CAD5800D02B3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CBA6707214CAD5800D02B3F /* Assets.xcassets */; };
 		6CBA670B214CAD5800D02B3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CBA6709214CAD5800D02B3F /* LaunchScreen.storyboard */; };
 		6CBA6716214CAD5800D02B3F /* UITableViewCellBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBA6715214CAD5800D02B3F /* UITableViewCellBuilderTests.swift */; };
+		6CBA6722214CAD9400D02B3F /* UITableViewCellBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBA6721214CAD9400D02B3F /* UITableViewCellBuilder.swift */; };
+		6CBA6724214CAE0D00D02B3F /* UITableViewCellUpdatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBA6723214CAE0D00D02B3F /* UITableViewCellUpdatable.swift */; };
+		6CBA6726214CAF1900D02B3F /* TableViewCellBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBA6725214CAF1900D02B3F /* TableViewCellBuilder.swift */; };
+		6CBA672F214CB08B00D02B3F /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBA672B214CB08A00D02B3F /* InfoCell.swift */; };
+		6CBA6730214CB08B00D02B3F /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBA672C214CB08A00D02B3F /* SwitchCell.swift */; };
+		6CBA6731214CB08B00D02B3F /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBA672D214CB08A00D02B3F /* TextCell.swift */; };
+		6CBA6732214CB08B00D02B3F /* UserInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBA672E214CB08B00D02B3F /* UserInfoCell.swift */; };
+		6CBA6734214CB57000D02B3F /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBA6733214CB57000D02B3F /* UITableView+Reusable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,14 @@
 		6CBA6711214CAD5800D02B3F /* UITableViewCellBuilderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITableViewCellBuilderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CBA6715214CAD5800D02B3F /* UITableViewCellBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellBuilderTests.swift; sourceTree = "<group>"; };
 		6CBA6717214CAD5800D02B3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CBA6721214CAD9400D02B3F /* UITableViewCellBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellBuilder.swift; sourceTree = "<group>"; };
+		6CBA6723214CAE0D00D02B3F /* UITableViewCellUpdatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellUpdatable.swift; sourceTree = "<group>"; };
+		6CBA6725214CAF1900D02B3F /* TableViewCellBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellBuilder.swift; sourceTree = "<group>"; };
+		6CBA672B214CB08A00D02B3F /* InfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
+		6CBA672C214CB08A00D02B3F /* SwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
+		6CBA672D214CB08A00D02B3F /* TextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		6CBA672E214CB08B00D02B3F /* UserInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoCell.swift; sourceTree = "<group>"; };
+		6CBA6733214CB57000D02B3F /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +75,7 @@
 		6CBA66F4214CAD5700D02B3F = {
 			isa = PBXGroup;
 			children = (
+				6CBA6720214CAD6200D02B3F /* Sources */,
 				6CBA66FF214CAD5700D02B3F /* UITableViewCellBuilder */,
 				6CBA6714214CAD5800D02B3F /* UITableViewCellBuilderTests */,
 				6CBA66FE214CAD5700D02B3F /* Products */,
@@ -77,8 +94,10 @@
 		6CBA66FF214CAD5700D02B3F /* UITableViewCellBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				6CBA6735214CB6E200D02B3F /* Cell */,
 				6CBA6700214CAD5700D02B3F /* AppDelegate.swift */,
 				6CBA6702214CAD5700D02B3F /* ViewController.swift */,
+				6CBA6725214CAF1900D02B3F /* TableViewCellBuilder.swift */,
 				6CBA6704214CAD5700D02B3F /* Main.storyboard */,
 				6CBA6707214CAD5800D02B3F /* Assets.xcassets */,
 				6CBA6709214CAD5800D02B3F /* LaunchScreen.storyboard */,
@@ -94,6 +113,27 @@
 				6CBA6717214CAD5800D02B3F /* Info.plist */,
 			);
 			path = UITableViewCellBuilderTests;
+			sourceTree = "<group>";
+		};
+		6CBA6720214CAD6200D02B3F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6CBA6721214CAD9400D02B3F /* UITableViewCellBuilder.swift */,
+				6CBA6723214CAE0D00D02B3F /* UITableViewCellUpdatable.swift */,
+				6CBA6733214CB57000D02B3F /* UITableView+Reusable.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6CBA6735214CB6E200D02B3F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6CBA672E214CB08B00D02B3F /* UserInfoCell.swift */,
+				6CBA672D214CB08A00D02B3F /* TextCell.swift */,
+				6CBA672B214CB08A00D02B3F /* InfoCell.swift */,
+				6CBA672C214CB08A00D02B3F /* SwitchCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +237,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CBA6734214CB57000D02B3F /* UITableView+Reusable.swift in Sources */,
+				6CBA672F214CB08B00D02B3F /* InfoCell.swift in Sources */,
+				6CBA6724214CAE0D00D02B3F /* UITableViewCellUpdatable.swift in Sources */,
+				6CBA6731214CB08B00D02B3F /* TextCell.swift in Sources */,
 				6CBA6703214CAD5700D02B3F /* ViewController.swift in Sources */,
+				6CBA6726214CAF1900D02B3F /* TableViewCellBuilder.swift in Sources */,
+				6CBA6730214CB08B00D02B3F /* SwitchCell.swift in Sources */,
 				6CBA6701214CAD5700D02B3F /* AppDelegate.swift in Sources */,
+				6CBA6732214CB08B00D02B3F /* UserInfoCell.swift in Sources */,
+				6CBA6722214CAD9400D02B3F /* UITableViewCellBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
