@@ -8,7 +8,9 @@
 //  @author: Pircate(gao497868860@gmail.com)
 //
 
-public protocol UITableViewCellUpdatable {
+import UIKit
+
+public protocol UITableViewCellUpdatable where Self: UITableViewCell {
     
     func update(_ builder: UITableViewCellBuilder)
 }

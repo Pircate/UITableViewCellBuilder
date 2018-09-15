@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     }()
     
     private lazy var dataSource: [[TableViewCellBuilder]] = {
-        [[.userInfo(UIImage(), "用户名", "这家伙很懒，什么都没留下"),
+        [[.userInfo(#imageLiteral(resourceName: "avatar"), "用户名", "这家伙很懒，什么都没留下"),
           .switch("通知", true)],
          [TableViewCellBuilder.text("我的收益", "0.0 元"),
           TableViewCellBuilder.text("我的金币", "8848"),
@@ -42,10 +42,17 @@ class ViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             // 刷新我的收益
             guard case .text(let title, var price) = self.dataSource[1][0] else { return }
-            price = "998 元"
+            price = "998.0 元"
             self.dataSource[1][0] = .text(title, price)
             self.tableView.reloadData()
         }
+    }
+}
+
+extension ViewController {
+    
+    subscript(indexPath: IndexPath) -> TableViewCellBuilder {
+        return dataSource[indexPath.section][indexPath.row]
     }
 }
 
@@ -60,7 +67,7 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let builder = dataSource[indexPath.section][indexPath.row]
+        let builder = self[indexPath]
         let cell = tableView.dequeueReusableCell(builder.cellType)
         builder.build(cell)
         return cell
@@ -70,6 +77,6 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return dataSource[indexPath.section][indexPath.row].rowHeight
+        return self[indexPath].rowHeight
     }
 }
