@@ -11,7 +11,7 @@ import UIKit
 class TextCell: UITableViewCell {
     
     lazy var subtitleLabel: UILabel = {
-        let label = UILabel(frame: CGRect(x: contentView.frame.width - 115, y: 12, width: 80, height: 20))
+        let label = UILabel(frame: CGRect(x: UIScreen.main.bounds.width - 115, y: 12, width: 80, height: 20))
         label.textColor = UIColor.gray
         label.textAlignment = .right
         label.font = UIFont.systemFont(ofSize: 14)

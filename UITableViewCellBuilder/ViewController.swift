@@ -26,12 +26,12 @@ class ViewController: UIViewController {
     private lazy var dataSource: [[TableViewCellBuilder]] = {
         [[.userInfo(#imageLiteral(resourceName: "avatar"), "用户名", "这家伙很懒，什么都没留下"),
           .switch("通知", true)],
-         [TableViewCellBuilder.text("我的收益", "0.0 元"),
-          TableViewCellBuilder.text("我的金币", "8848"),
-          TableViewCellBuilder.text("我的动态", ""),
-          TableViewCellBuilder.text("我的VIP", "未开通")],
-         [TableViewCellBuilder.info("活动"),
-          TableViewCellBuilder.info("通知")]]
+         [.text("我的收益", "0.0 元"),
+          .text("我的金币", "8848"),
+          .text("我的动态", ""),
+          .text("我的VIP", "未开通")],
+         [.info("活动"),
+          .info("通知")]]
     }()
 
     override func viewDidLoad() {

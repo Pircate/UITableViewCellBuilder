@@ -11,7 +11,7 @@ import UIKit
 class SwitchCell: UITableViewCell {
     
     private lazy var sct: UISwitch = {
-        UISwitch(frame: CGRect(x: contentView.frame.width - 65, y: 7, width: 60, height: 30))
+        UISwitch(frame: CGRect(x: UIScreen.main.bounds.width - 65, y: 7, width: 60, height: 30))
     }()
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
